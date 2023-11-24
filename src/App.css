@@ -1,38 +1,35 @@
 .App {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(45deg, #40b9b1, #3a396b); /* Gradient background - Crypto space colors */
+  color: #ffffff; /* Lighter text color */
+}
+
+.centered-container {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.bitcoin-logo {
+  width: 120px; /* Keep the logo size */
+  height: 120px;
+  margin-bottom: 10px; /* Adjusted spacing between logo and label */
+  border-radius: 8px; /* Slightly curved edges */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Soft shadow for visibility */
+  background-color: #87a6ba;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.price-box {
+  background: linear-gradient(45deg, #333333, #1a1a1a); /* Greyscale gradient for the price box */
+  padding: 25px; /* Increase the padding */
+  border-radius: 12px; /* Slightly more rounded corners */
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3); /* Lighter shadow for a futuristic effect */
+  transition: transform 0.3s ease; /* Add a smooth transition effect */
+  display: inline-block; /* Display as an inline block to wrap the logo */
+  max-width: 400px; /* Increase the maximum width of the price box */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.price-box:hover {
+  transform: scale(1.05); /* Scale up on hover */
 }
