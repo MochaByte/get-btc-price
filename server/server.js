@@ -1,10 +1,16 @@
 const express = require('express');
+const cors = require('cors'); // Import the cors middleware
 const axios = require('axios');
+
 const app = express();
 const port = 3001;
 
+
 const binanceApiKey = 'MzCVTcqBxqKtRDXfAvpzajqLSU8aBgExQ37n4jZz9bGTM8Lpjm5Nwe2oubcPkERk';
 const binanceApiSecret = 'MNLkkCri8ldBap8eB0ctjPU8y8IHES2t4R9woaL8nZP8MMcI1C83hT6eYQYY13ko';
+
+// Enable CORS
+app.use(cors());
 
 app.get('/api/bitcoin-price', async (req, res) => {
   try {
