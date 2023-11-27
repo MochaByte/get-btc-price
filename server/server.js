@@ -6,8 +6,8 @@ const app = express();
 const port = 3001;
 
 
-const binanceApiKey = 'MzCVTcqBxqKtRDXfAvpzajqLSU8aBgExQ37n4jZz9bGTM8Lpjm5Nwe2oubcPkERk';
-const binanceApiSecret = 'MNLkkCri8ldBap8eB0ctjPU8y8IHES2t4R9woaL8nZP8MMcI1C83hT6eYQYY13ko';
+const binanceApiKey = 'PUT_IN_YOUR_API_KEY';
+const binanceApiSecret = 'PUT_IN_YOUR_SERCRET_KEY';
 
 // Enable CORS
 app.use(cors());
@@ -34,3 +34,18 @@ app.get('/api/bitcoin-price', async (req, res) => {
 app.listen(port, () => {
   console.log(`Server is running at http://localhost:${port}`);
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
